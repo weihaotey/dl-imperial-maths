@@ -1,0 +1,71 @@
+import tensorflow as tf
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+
+def load_file(file):
+    '''
+    The function - load_file(file) where file is the csv file containing data for several independent variable. \
+    The function returns df (table containing data) and cols (headin gof each columns)
+    '''
+    df = pd.read_csv(file, delim_whitespace=True)
+    cols = list(df.columns.values)
+    return df, cols
+
+df,cols = load_file('poverty.txt')
+length = len(df['PovPct'])
+#placeholder for the matrix A for the linear regression
+data = tf.placeholder(tf.float64, shape=(length,), name='input')
+
+
+feed_dict = {data: df['PovPct']}
+with tf.Session() as sess:
+    init_op = tf.global_variables_initializer()
+    sess.run(init_op)
+    output1 = sess.run(data, feed_dict=feed_dict)
+#add a column of ones to account for bias term
+A = np.column_stack((output1, [1 for i in range(length)]))
+
+b = tf.placeholder(tf.float64, shape=(length,), name='input')
+At = tf.matrix_transpose(A)
+AtA_inv = tf.matrix_inverse(tf.matmul(At,A))
+#solution of the linear regression in normal equation
+x1 = tf.matmul(AtA_inv,tf.matmul(At,tf.expand_dims(b,axis=1)))
+feed_dict1 = {b: df['Brth15to17']}
+with tf.Session() as sess:
+    init_op = tf.global_variables_initializer()
+    sess.run(init_op)
+    x = sess.run(x1, feed_dict=feed_dict1)
+    #print(x)
+    
+scatterx = list(df['PovPct'])
+scattery = list(df['Brth15to17'])
+plt.scatter(scatterx,scattery,)
+ploty = x[0]*scatterx + x[1]
+plt.plot(scatterx,ploty)
+plt.xlabel('\'PovPct\'')
+plt.ylabel('\'Brth15to17\'')
+
+print('Let variable y to be Brth15to17 and x be PovPct \n \
+then the solution to the linear regression is the following equation \n \
+y = {} x + {}'.format(float(x[0]),float(x[1])))
+
+feed_dict2 = {data: df['ViolCrime']}
+with tf.Session() as sess:
+    init_op = tf.global_variables_initializer()
+    sess.run(init_op)
+    output2 = sess.run(data, feed_dict=feed_dict2)
+A = np.column_stack((output1, output2, [1 for i in range(length)]))
+At = tf.matrix_transpose(A)
+AtA_inv = tf.matrix_inverse(tf.matmul(At,A))
+#solution of the linear regression in normal equation
+x1 = tf.matmul(AtA_inv,tf.matmul(At,tf.expand_dims(b,axis=1)))
+with tf.Session() as sess:
+    init_op = tf.global_variables_initializer()
+    sess.run(init_op)
+    x = sess.run(x1, feed_dict=feed_dict1)
+#print(x)
+
+print('\n Let variable y to be Brth15to17, x be PovPct and z = ViolCrime \n \
+then the solution to the linear regression is the following equation \n \
+y = {} x + {} z + {}'.format(float(x[0]),float(x[1]),float(x[2])))
