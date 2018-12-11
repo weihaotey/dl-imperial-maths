@@ -59,8 +59,8 @@ However, as stated in the lectures of this course, researher found that using sa
 Images are  generated during the training and the corresponding images from the generator _after_ epoch 0 to 29 are displayed in Figure 3 below. It can be seen that the images improved in quality after the trainings. 
 
 <p float="left">
-  <img src="loss_GAN_uniform.png" width="100" />
-  <img src="loss_GAN_normal.png" width="100" /> 
+  <img src="loss_GAN_uniform.png" />
+  <img src="loss_GAN_normal.png" /> 
 </p>
 
 Comparing the original images from the MNIST data in Figure 4, it is certainly undistinguished from the human eye. Even though the graphs show that generators practically lost to the discriminator as the discriminator have been trained enough to be able to distinguish real images and the images provided by generator. 
