@@ -56,12 +56,12 @@ However, as stated in the lectures of this course, researher found that using sa
 
 <figure>
   <figcaption>Figure 1 : Losses from uniform initializer</figcaption>
-  <img src="loss_GAN_uniform.png" alt="GAN uniform"/>
+  <img src="fashion_train_file/loss_GAN_uniform.png" alt="GAN uniform"/>
 </figure>
 
 <figure>
   <figcaption>Figure 2 : Losses from normal initializer</figcaption>
-  <img src="loss_GAN_normal.png" alt="GAN normal"/>
+  <img src="fashion_train_file/loss_GAN_normal.png" alt="GAN normal"/>
 </figure>
 
 
@@ -75,18 +75,18 @@ Comparing the original images from the MNIST data in Figure 4, it is certainly u
 <figure>
   <figcaption>Figure 3 : Generated images from epoch 0 to 29:</figcaption>
   Generated images after epoch 0:
-  <img src="GAN_epoch000_test_all_classes.png" alt="image at epoch 0"/> Generated images after epoch 5:
-  <img src="GAN_epoch005_test_all_classes.png" alt="image at epoch 5"/> Generated images after epoch 10:
-  <img src="GAN_epoch010_test_all_classes.png" alt="image at epoch 10"/> Generated images after epoch 15:
-  <img src="GAN_epoch015_test_all_classes.png" alt="image at epoch 15"/> Generated images after epoch 20: 
-  <img src="GAN_epoch020_test_all_classes.png" alt="image at epoch 20"/> Generated images after epoch 25:
-  <img src="GAN_epoch025_test_all_classes.png" alt="image at epoch 25"/> Generated images after epoch 29:
-  <img src="GAN_epoch029_test_all_classes.png" alt="image at epoch 29"/>
+  <img src="fashion_train_file/GAN_epoch000_test_all_classes.png" alt="image at epoch 0"/> Generated images after epoch 5:
+  <img src="fashion_train_file/GAN_epoch005_test_all_classes.png" alt="image at epoch 5"/> Generated images after epoch 10:
+  <img src="fashion_train_file/GAN_epoch010_test_all_classes.png" alt="image at epoch 10"/> Generated images after epoch 15:
+  <img src="fashion_train_file/GAN_epoch015_test_all_classes.png" alt="image at epoch 15"/> Generated images after epoch 20: 
+  <img src="fashion_train_file/GAN_epoch020_test_all_classes.png" alt="image at epoch 20"/> Generated images after epoch 25:
+  <img src="fashion_train_file/GAN_epoch025_test_all_classes.png" alt="image at epoch 25"/> Generated images after epoch 29:
+  <img src="fashion_train_file/GAN_epoch029_test_all_classes.png" alt="image at epoch 29"/>
 </figure>
 
 <figure>
   <figcaption>Figure 4: original image picked from the data</figcaption>
-  <img src="GAN_real_image.png" alt="my alt text"/>
+  <img src="fashion_train_file/GAN_real_image.png" alt="my alt text"/>
 </figure>
 
 
@@ -104,18 +104,18 @@ The resulting generated images from each 5 epoch is as shown in Figure 5. The qu
 <figure>
   <figcaption>Figure 5 : Generated images using WGAN from epoch 0 to 29:</figcaption>
   Generated images after epoch 0:
-  <img src="WGAN_epoch000_test_all_classes.png" alt="image at epoch 0"/> Generated images after epoch 5:
-  <img src="WGAN_epoch005_test_all_classes.png" alt="image at epoch 5"/> Generated images after epoch 10:
-  <img src="WGAN_epoch010_test_all_classes.png" alt="image at epoch 10"/> Generated images after epoch 15:
-  <img src="WGAN_epoch015_test_all_classes.png" alt="image at epoch 15"/> Generated images after epoch 20: 
-  <img src="WGAN_epoch020_test_all_classes.png" alt="image at epoch 20"/> Generated images after epoch 25:
-  <img src="WGAN_epoch025_test_all_classes.png" alt="image at epoch 25"/> Generated images after epoch 29:
-  <img src="WGAN_epoch029_test_all_classes.png" alt="image at epoch 29"/>
+  <img src="fashion_train_file/WGAN_epoch000_test_all_classes.png" alt="image at epoch 0"/> Generated images after epoch 5:
+  <img src="fashion_train_file/WGAN_epoch005_test_all_classes.png" alt="image at epoch 5"/> Generated images after epoch 10:
+  <img src="fashion_train_file/WGAN_epoch010_test_all_classes.png" alt="image at epoch 10"/> Generated images after epoch 15:
+  <img src="fashion_train_file/WGAN_epoch015_test_all_classes.png" alt="image at epoch 15"/> Generated images after epoch 20: 
+  <img src="fashion_train_file/WGAN_epoch020_test_all_classes.png" alt="image at epoch 20"/> Generated images after epoch 25:
+  <img src="fashion_train_file/WGAN_epoch025_test_all_classes.png" alt="image at epoch 25"/> Generated images after epoch 29:
+  <img src="fashion_train_file/WGAN_epoch029_test_all_classes.png" alt="image at epoch 29"/>
 </figure>
 
 <figure>
   <figcaption>Figure 6 : Losses from WGAN</figcaption>
-  <img src="loss_WGAN.png" alt="WGAN loss graph">
+  <img src="fashion_train_file/loss_WGAN.png" alt="WGAN loss graph">
 </figure>
 
 
