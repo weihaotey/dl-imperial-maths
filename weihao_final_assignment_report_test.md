@@ -54,14 +54,21 @@ According to the original source of the code for *GAN*, the initializer from uni
 
 However, as stated in the lectures of this course, researher found that using sample from a gaussian distribution (normal) would improve the result. This is proved by the graph of training curve using _normal_ initializer as shown in Figure 2. It can be seen that in Figure 2, the loss of generator increase slower than that of Figure 1 where _uniform_ distribution is used. The fluctuation of the losses are also generally lower using normal initializer. However, The generator loss still exceed the loss of discriminator eventually in both figures.
 
+<figure>
+  <figcaption>Figure 1 : Losses from uniform initializer</figcaption>
+  <img src="loss_GAN_uniform.png" alt="my alt text"/>
+</figure>
+
+<figure>
+  <figcaption>Figure 2 : Losses from normal initializer</figcaption>
+  <img src="loss_GAN_normal.png" alt="my alt text"/>
+</figure>
+
+
 ## Result
 
 Images are  generated during the training and the corresponding images from the generator _after_ epoch 0 to 29 are displayed in Figure 3 below. It can be seen that the images improved in quality after the trainings. 
 
-<p float="left">
-  <img src="loss_GAN_uniform.png" />
-  <img src="loss_GAN_normal.png" /> 
-</p>
 
 Comparing the original images from the MNIST data in Figure 4, it is certainly undistinguished from the human eye. Even though the graphs show that generators practically lost to the discriminator as the discriminator have been trained enough to be able to distinguish real images and the images provided by generator. 
 
