@@ -56,11 +56,11 @@ However, as stated in the lectures of this course, researher found that using sa
 
 <figure>
   <em><figcaption>Figure 1 : Losses from uniform initializer</figcaption></em>
-  <em><img src="fashion_train_file/loss_GAN_uniform.png" alt="GAN uniform"/></em>
+  <img src="fashion_train_file/loss_GAN_uniform.png" alt="GAN uniform"/>
 </figure>
 
 <figure>
-  <figcaption>Figure 2 : Losses from normal initializer</figcaption>
+  <em><figcaption>Figure 2 : Losses from normal initializer</figcaption></em>
   <img src="fashion_train_file/loss_GAN_normal.png" alt="GAN normal"/>
 </figure>
 
@@ -84,7 +84,7 @@ Comparing the original images from the MNIST data in Figure 4, it is certainly u
   <img src="fashion_train_file/GAN_epoch029_test_all_classes.png" alt="image at epoch 29"/>
 </figure>
 
-<em>igure 4: original image picked from the data</em>
+<em>Figure 4: original image picked from the data</em>
 <figure>
   <img src="fashion_train_file/GAN_real_image.png" alt="my alt text"/>
 </figure>
