@@ -14,7 +14,7 @@ Hence, the discriminator is trained to recognize real image from the fake ones w
 
 _Tensorflow_ is used to utilise the important functions defined in the package for the convolutional neuron network in discriminator and generator functions.
 
-Firstly, we need to include some necessary packages like tensorflow and numpy for the neuron network. Next, extract data from the idx files from fashion MNIST as numpy arrays. Note that only the actual training data are needed for GAN. Their labels are included for completeness. Most of the code are referenced from [[1]][1] and were altered to fit in knowledge learnt in this course.
+Firstly, we need to include some necessary packages like tensorflow and numpy for the neuron network. Next, extract data from the idx files from fashion MNIST as numpy arrays. Note that only the actual training data are needed for GAN. Their labels are included for completeness. Most of the code are referenced from [[1]][one] and were altered to fit in knowledge learnt in this course.
 
 
 ### Some handling functions
@@ -24,7 +24,7 @@ Some side functions that do not directly involved on the training like handling 
 
 ### Main Functions 
 
-Now, we define some important functions that set the core of the convolutional network in _discriminator_ and _generator_. The activation function used here is leaky ReLU as suggested in [[2]][2]. 
+Now, we define some important functions that set the core of the convolutional network in _discriminator_ and _generator_. The activation function used here is leaky ReLU as suggested in [[2]][two]. 
 
 
 ### Main training functions using _GAN_
@@ -53,7 +53,7 @@ dimension of noise vector : 62
 
 According to the original source of the code for *GAN*, the initializer from a uniform distribution is used and the training curve in terms of the loss function for both _generator_ and _discriminator_ is shown in Figure 1. 
 
-However, as stated in the lectures of this course, researher found that using sample from a gaussian distribution (normal) would improve the result[[2]][2]. This is validated by the graph of training curves using _normal_ initializer as shown in Figure 2. It can be seen that in Figure 2, the loss of generator increase slower than that of Figure 1 where _uniform_ distribution is used. The fluctuation of the losses are also generally lower using normal initializer. However, The generator loss still exceed the loss of discriminator eventually in both figures.
+However, as stated in the lectures of this course, researher found that using sample from a gaussian distribution (normal) would improve the result[[2]][two]. This is validated by the graph of training curves using _normal_ initializer as shown in Figure 2. It can be seen that in Figure 2, the loss of generator increase slower than that of Figure 1 where _uniform_ distribution is used. The fluctuation of the losses are also generally lower using normal initializer. However, The generator loss still exceed the loss of discriminator eventually in both figures.
 
 <figure>
   <em><figcaption>Figure 1 : Losses from uniform initializer</figcaption></em>
@@ -129,5 +129,5 @@ Although the discriminator in the GAN method outsmart the generator in this case
 
 2. [GAN hacks](https://github.com/soumith/ganhacks)
 
-[1]: https://github.com/hwalsuklee/tensorflow-generative-model-collections
-[2]: https://github.com/soumith/ganhacks
+[one]: https://github.com/hwalsuklee/tensorflow-generative-model-collections
+[two]: https://github.com/soumith/ganhacks
