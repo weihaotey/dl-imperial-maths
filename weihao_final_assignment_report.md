@@ -34,7 +34,9 @@ Define a _GAN_ class and create the functions _discriminator_ and _generator_ wi
 #### Hyper-parameters
 
 Adam Optimizer  
- - Learning rate : 0.0002
+ - Learning rate :
+  - 0.0002 for discriminator
+  - 0.001 for generator
  - Beta : 0.5
  
 Height and width dimension of MNIST image : 28
