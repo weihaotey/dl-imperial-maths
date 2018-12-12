@@ -5,10 +5,10 @@ In this assignment, the goal is to generate random but distinctive and clear ima
 The idea of GAN is to design two convolution networks:
 
 1. _Discriminator :_  
-Differentiate inputs from the real source (fashion MNIST) and from fake generated images from the _generator_ function.
+Differentiate inputs from the real source (fashion MNIST) and generated images produced by the _generator_ function.
 
 2. _Generator :_   
-Generate fake images (from normal distribution) that aimed to mimic images from the source and to trick the _discriminator_ into believing that the fake images are from the real source.
+Generate fake images (from normal or uniform distribution) that aimed to mimic images from the source and to trick the _discriminator_ into believing that the fake images are from the real source.
 
 Hence, the discriminator is trained to recognize real image from the fake ones while the generator is trained to produce images that are closer each step to the original source until they are indistinguishable. 
 
